@@ -211,7 +211,7 @@ func parseStatLine(l string) (string, string, string, error) {
 	return statCat, statName, values, nil
 }
 
-/* IO */
+/* Persistence */
 
 func save(dm DinoMap) {
 
