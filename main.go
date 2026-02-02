@@ -16,7 +16,13 @@ import (
 const baseUrl = "https://guides.gsh-servers.com/path-of-titans/guides/curve-overrides/alderons/"
 const fileName = "./dinos.json"
 
-type DinoStats map[string]any
+type DinoMap map[string]Dino
+
+type Dino struct {
+	Name  string                       `json:"name"`
+	URL   string                       `json:"url"`
+	Stats map[string]map[string]string `json:"stats"`
+}
 
 func main() {
 	rootCmd := &cobra.Command{Use: "pot"}
@@ -58,9 +64,9 @@ func main() {
 	rootCmd.Execute()
 }
 
-func dinoSearch(query string, dj DinoMap) DinoStats {
+func dinoSearch(query string, dj DinoMap) DinoMap {
 
-	qds := DinoStats{}
+	qds := DinoMap{}
 
 	lc := strings.ToLower(query)
 
@@ -74,14 +80,6 @@ func dinoSearch(query string, dj DinoMap) DinoStats {
 }
 
 /* WebScraping */
-
-type DinoMap map[string]Dino
-
-type Dino struct {
-	Name  string                       `json:"name"`
-	URL   string                       `json:"url"`
-	Stats map[string]map[string]string `json:"stats"`
-}
 
 func scrape() {
 
