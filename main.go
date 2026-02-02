@@ -18,41 +18,47 @@ const fileName = "./dinos.json"
 
 type DinoMap map[string]Dino
 
+type Stat map[string]string
+
 type Dino struct {
-	Name  string                       `json:"name"`
-	URL   string                       `json:"url"`
-	Stats map[string]map[string]string `json:"stats"`
+	Name  string          `json:"name"`
+	URL   string          `json:"url"`
+	Stats map[string]Stat `json:"stats"`
 }
 
 func main() {
 	rootCmd := &cobra.Command{Use: "pot"}
 
 	runCmd := &cobra.Command{
-		Use: "find [name]",
+		Use:  "find [name] [stat]",
+		Args: cobra.RangeArgs(1, 2),
 		Run: func(cmd *cobra.Command, args []string) {
-			fmt.Println(args)
-			qry := args[0]
+			dinoName := args[0]
 			d, err := load()
 			if err != nil {
 				log.Fatal(err)
 			}
 
-			qryDinos := dinoSearch(qry, d)
-			for k := range qryDinos {
+			qryDinos := dinoSearch(dinoName, d)
 
-				/* TODO Create search and format data */
-				fmt.Println(k)
+			var statQry string
+			if len(args) > 1 {
+				statQry = args[1]
+				qryDinos = statSearch(statQry, qryDinos)
 			}
+
+			print(qryDinos)
 		},
 	}
 
 	scrapeCmd := &cobra.Command{
 		Use:   "scrape",
+		Args:  cobra.NoArgs,
 		Short: "Scrape links from a webpage",
 		Run: func(cmd *cobra.Command, args []string) {
-			println("Scraping...")
+			fmt.Println("Scraping...")
 			scrape()
-
+			fmt.Println("Scraping complete!")
 		},
 	}
 
@@ -64,26 +70,57 @@ func main() {
 	rootCmd.Execute()
 }
 
-func dinoSearch(query string, dj DinoMap) DinoMap {
+/* Query Fns */
+
+func dinoSearch(query string, dm DinoMap) DinoMap {
 
 	qds := DinoMap{}
 
 	lc := strings.ToLower(query)
 
-	for k := range dj {
+	for k := range dm {
 		if strings.Contains(strings.ToLower(k), lc) {
-			qds[k] = dj[k]
+			qds[k] = dm[k]
 		}
 	}
 
 	return qds
 }
 
+func statSearch(qry string, dm DinoMap) DinoMap {
+	out := DinoMap{}
+
+	qry = strings.ToLower(qry)
+
+	for nm, d := range dm {
+		extStats := map[string]Stat{}
+
+		for cat, inner := range d.Stats {
+			for stat, val := range inner {
+				if strings.Contains(strings.ToLower(cat+"."+stat), qry) {
+					if extStats[cat] == nil {
+						extStats[cat] = map[string]string{}
+					}
+					extStats[cat][stat] = val
+				}
+			}
+		}
+
+		if len(extStats) > 0 {
+			d.Stats = extStats
+			out[nm] = d
+		}
+	}
+
+	return out
+}
+
 /* WebScraping */
 
-func scrape() {
+func scrape() error {
 
 	var dinoMap = DinoMap{}
+	var scrapeErr error
 
 	list := colly.NewCollector()
 	stats := list.Clone()
@@ -104,11 +141,11 @@ func scrape() {
 		name := h.Request.Ctx.Get("name")
 		url := h.Request.Ctx.Get("url")
 
-		// fmt.Println(name)
-
 		cat, nm, val, err := parseStatLine(h.Text)
 		if err != nil {
-			log.Fatal(err)
+			scrapeErr = err
+			h.Request.Abort()
+			return
 		}
 
 		d, ok := dinoMap[name]
@@ -116,7 +153,7 @@ func scrape() {
 			d = Dino{
 				Name:  name,
 				URL:   url,
-				Stats: map[string]map[string]string{},
+				Stats: map[string]Stat{},
 			}
 		}
 
@@ -132,8 +169,13 @@ func scrape() {
 	list.Wait()
 	stats.Wait()
 
+	if scrapeErr != nil {
+		return scrapeErr
+	}
+
 	save(dinoMap)
 
+	return nil
 }
 
 var capture = regexp.MustCompile(`\(([^)]+)\)`)
@@ -199,4 +241,11 @@ func load() (DinoMap, error) {
 		return nil, err
 	}
 	return m, nil
+}
+
+/* out */
+
+func print(dm DinoMap) {
+	b, _ := json.MarshalIndent(dm, "", "  ")
+	fmt.Println(string(b))
 }
