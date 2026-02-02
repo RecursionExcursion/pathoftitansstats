@@ -29,45 +29,85 @@ type Dino struct {
 func main() {
 	rootCmd := &cobra.Command{Use: "pot"}
 
-	runCmd := &cobra.Command{
+	findCmd := &cobra.Command{
 		Use:  "find [name] [stat]",
 		Args: cobra.RangeArgs(1, 2),
-		Run: func(cmd *cobra.Command, args []string) {
-			dinoName := args[0]
-			d, err := load()
-			if err != nil {
-				log.Fatal(err)
-			}
-
-			qryDinos := dinoSearch(dinoName, d)
-
-			var statQry string
-			if len(args) > 1 {
-				statQry = args[1]
-				qryDinos = statSearch(statQry, qryDinos)
-			}
-
-			print(qryDinos)
-		},
+		Run:  runFind,
 	}
+
+	findCmd.Flags().BoolP("combat", "a", false, "Combat/Ability stats")
+	findCmd.Flags().BoolP("multiplier", "m", false, "Multiplier stats")
+	findCmd.Flags().BoolP("core", "c", false, "Core stats")
 
 	scrapeCmd := &cobra.Command{
 		Use:   "scrape",
 		Args:  cobra.NoArgs,
 		Short: "Scrape links from a webpage",
-		Run: func(cmd *cobra.Command, args []string) {
-			fmt.Println("Scraping...")
-			scrape()
-			fmt.Println("Scraping complete!")
-		},
+		Run:   runScrape,
 	}
 
-	rootCmd.AddCommand(runCmd)
+	rootCmd.AddCommand(findCmd)
 	rootCmd.AddCommand(scrapeCmd)
 
-	runCmd.Flags().StringP("dino", "d", "", "Dino query")
-
 	rootCmd.Execute()
+}
+
+/* Commands */
+
+func runFind(cmd *cobra.Command, args []string) {
+	dinoName := args[0]
+
+	d, err := load()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	qryDinos := dinoSearch(dinoName, d)
+
+	combat, _ := cmd.Flags().GetBool("combat")
+	core, _ := cmd.Flags().GetBool("core")
+	mult, _ := cmd.Flags().GetBool("multiplier")
+
+	var statQry string
+	if len(args) > 1 {
+		statQry = args[1]
+		qryDinos = statSearch(statQry, qryDinos)
+	}
+
+	if combat || core || mult {
+		for _, d := range qryDinos {
+			for cat := range d.Stats {
+				switch cat {
+				case "Combat":
+					{
+						if !combat {
+							delete(d.Stats, cat)
+						}
+					}
+				case "Core":
+					{
+						if !core {
+							delete(d.Stats, cat)
+						}
+					}
+				case "Multiplier":
+					{
+						if !mult {
+							delete(d.Stats, cat)
+						}
+					}
+				}
+			}
+		}
+	}
+
+	print(qryDinos)
+}
+
+func runScrape(cmd *cobra.Command, args []string) {
+	fmt.Println("Scraping...")
+	scrape()
+	fmt.Println("Scraping complete!")
 }
 
 /* Query Fns */
