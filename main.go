@@ -30,12 +30,19 @@ func main() {
 	rootCmd := &cobra.Command{Use: "pot"}
 
 	findCmd := &cobra.Command{
-		Use:  "find [name] [stat]",
-		Args: cobra.RangeArgs(1, 2),
-		Run:  runFind,
+		Use:   "find [name] [stat]",
+		Args:  cobra.RangeArgs(1, 2),
+		Short: "Search dino stats",
+		Long: `Search dinosaur stats. 
+		Stat values are listed per growth stage:
+		Hatchling, Juvenile, Adolescent Sub-Adult, Adult
+		Example:
+		Armor: 1,1,1,1,1
+`,
+		Run: runFind,
 	}
 
-	findCmd.Flags().BoolP("combat", "a", false, "Combat/Ability stats")
+	findCmd.Flags().BoolP("ability", "a", false, "Ability stats")
 	findCmd.Flags().BoolP("multiplier", "m", false, "Multiplier stats")
 	findCmd.Flags().BoolP("core", "c", false, "Core stats")
 
@@ -64,7 +71,7 @@ func runFind(cmd *cobra.Command, args []string) {
 
 	qryDinos := dinoSearch(dinoName, d)
 
-	combat, _ := cmd.Flags().GetBool("combat")
+	ability, _ := cmd.Flags().GetBool("ability")
 	core, _ := cmd.Flags().GetBool("core")
 	mult, _ := cmd.Flags().GetBool("multiplier")
 
@@ -74,13 +81,14 @@ func runFind(cmd *cobra.Command, args []string) {
 		qryDinos = statSearch(statQry, qryDinos)
 	}
 
-	if combat || core || mult {
+	//Filter fields if flags are provided
+	if ability || core || mult {
 		for _, d := range qryDinos {
 			for cat := range d.Stats {
 				switch cat {
 				case "Combat":
 					{
-						if !combat {
+						if !ability {
 							delete(d.Stats, cat)
 						}
 					}
@@ -101,7 +109,7 @@ func runFind(cmd *cobra.Command, args []string) {
 		}
 	}
 
-	print(qryDinos)
+	print(cmd, qryDinos)
 }
 
 func runScrape(cmd *cobra.Command, args []string) {
@@ -285,7 +293,7 @@ func load() (DinoMap, error) {
 
 /* out */
 
-func print(dm DinoMap) {
+func print(cmd *cobra.Command, dm DinoMap) {
 	b, _ := json.MarshalIndent(dm, "", "  ")
-	fmt.Println(string(b))
+	cmd.Println(string(b))
 }
