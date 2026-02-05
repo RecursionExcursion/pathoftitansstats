@@ -13,8 +13,10 @@ import (
 	"github.com/spf13/cobra"
 )
 
-const baseUrl = "https://guides.gsh-servers.com/path-of-titans/guides/curve-overrides/alderons/"
-const fileName = "./dinos.json"
+const curveUrl = "https://guides.gsh-servers.com/path-of-titans/guides/curve-overrides/alderons/"
+const fandomUrl = "https://path-of-titans.fandom.com/wiki/Dinosaur_Stats"
+const curveFileName = "./c_dinos.json"
+const fandomFileName = "./f_dinos.json"
 
 type DinoMap map[string]Dino
 
@@ -114,7 +116,8 @@ func runFind(cmd *cobra.Command, args []string) {
 
 func runScrape(cmd *cobra.Command, args []string) {
 	fmt.Println("Scraping...")
-	scrape()
+	// scrapeCurve()
+	scrapeFandom()
 	fmt.Println("Scraping complete!")
 }
 
@@ -165,7 +168,69 @@ func statSearch(qry string, dm DinoMap) DinoMap {
 
 /* WebScraping */
 
-func scrape() error {
+type FandomShape struct {
+	Title string     `json:"title"`
+	Cats  []string   `json:"cats"`
+	Data  [][]string `json:"data"`
+}
+
+func scrapeFandom() {
+	list := colly.NewCollector()
+
+	fsMap := map[string]FandomShape{}
+
+	list.OnHTML("table", func(e *colly.HTMLElement) {
+
+		title := e.ChildText("caption")
+		if title == "" {
+			return
+		}
+		hdrs := e.ChildTexts("th")
+
+		fields := e.ChildTexts("td")
+
+		for i := range fields {
+			println(i, fields[i])
+		}
+
+		data := [][]string{}
+
+		temp := []string{}
+
+		for i := range fields {
+			if i%len(hdrs) == 0 && i != 0 {
+				data = append(data, temp)
+				temp = []string{}
+			}
+			temp = append(temp, fields[i])
+		}
+		if len(temp) > 0 {
+			data = append(data, temp)
+		}
+
+		println(len(hdrs), len(data[0]))
+
+		fs := FandomShape{
+			Title: title,
+			Cats:  hdrs,
+			Data:  data,
+		}
+
+		fsMap[fs.Title] = fs
+	})
+
+	list.Visit(fandomUrl)
+	list.Wait()
+
+	fmt.Println(fsMap)
+
+	dm := mapFandomDinos(fsMap)
+
+	save(dm, fandomFileName)
+
+}
+
+func scrapeCurve() error {
 
 	var dinoMap = DinoMap{}
 	var scrapeErr error
@@ -213,7 +278,7 @@ func scrape() error {
 		dinoMap[name] = d
 	})
 
-	list.Visit(baseUrl)
+	list.Visit(curveUrl)
 	list.Wait()
 	stats.Wait()
 
@@ -221,10 +286,12 @@ func scrape() error {
 		return scrapeErr
 	}
 
-	save(dinoMap)
+	save(dinoMap, curveFileName)
 
 	return nil
 }
+
+/* Data Mapping */
 
 var capture = regexp.MustCompile(`\(([^)]+)\)`)
 
@@ -259,23 +326,61 @@ func parseStatLine(l string) (string, string, string, error) {
 	return statCat, statName, values, nil
 }
 
+func mapFandomDinos(dinos map[string]FandomShape) DinoMap {
+	dm := DinoMap{}
+
+	for catKey, fs := range dinos {
+		hdrs := fs.Cats[1:]
+		for _, row := range fs.Data {
+
+			name := row[0]
+			fields := row[1:]
+
+			d, ok := dm[name]
+			if !ok {
+				d = Dino{
+					Name:  name,
+					URL:   "",
+					Stats: map[string]Stat{},
+				}
+			}
+
+			st, ok := d.Stats[catKey]
+			if !ok {
+				st = Stat{}
+			}
+
+			for i, h := range hdrs {
+
+				st[h] = fields[i]
+			}
+
+			d.Stats[catKey] = st
+
+			dm[name] = d
+		}
+	}
+
+	return dm
+}
+
 /* Persistence */
 
-func save(dm DinoMap) {
+func save(dm DinoMap, fn string) {
 
 	b, err := json.Marshal(dm)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	err = os.WriteFile(fileName, b, 0644)
+	err = os.WriteFile(fn, b, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
 }
 
 func load() (DinoMap, error) {
-	f, err := os.Open(fileName)
+	f, err := os.Open(curveFileName)
 	if err != nil {
 		return nil, err
 	}

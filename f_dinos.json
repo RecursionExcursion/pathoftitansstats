@@ -1,0 +1,1170 @@
+{
+    "Achillobator": {
+        "name": "Achillobator",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "55",
+                "Fall Resistance": "3200",
+                "Group Slot": "2",
+                "Heal Speed": "1.5",
+                "Health": "550",
+                "Weight": "2200"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:23",
+                "Sprint Speed": "1050",
+                "Sprint Stam Drain": "0.7",
+                "Stam Recovery Rate": "0.9",
+                "Trot Speed": "600",
+                "Walk Speed": "300"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "100",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "300",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Albertaceratops": {
+        "name": "Albertaceratops",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "40",
+                "Fall Resistance": "2000",
+                "Group Slot": "3",
+                "Heal Speed": "1.8",
+                "Health": "650",
+                "Weight": "3500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "1:40",
+                "Sprint Speed": "950",
+                "Sprint Stam Drain": "1",
+                "Stam Recovery Rate": "0.8",
+                "Trot Speed": "350",
+                "Walk Speed": "150"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "180",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "250",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Alioramus": {
+        "name": "Alioramus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "45",
+                "Fall Resistance": "3000",
+                "Group Slot": "2",
+                "Heal Speed": "1.67",
+                "Health": "525",
+                "Weight": "2400"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:47",
+                "Sprint Speed": "1150",
+                "Sprint Stam Drain": "0.6",
+                "Stam Recovery Rate": "0.7",
+                "Trot Speed": "520",
+                "Walk Speed": "250"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "150",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "300",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Allosaurus": {
+        "name": "Allosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "60",
+                "Fall Resistance": "2000",
+                "Group Slot": "3",
+                "Heal Speed": "1.4",
+                "Health": "700",
+                "Weight": "3500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "1:31",
+                "Sprint Speed": "1000",
+                "Sprint Stam Drain": "1.1",
+                "Stam Recovery Rate": "0.75",
+                "Trot Speed": "450",
+                "Walk Speed": "240"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "200",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "350",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Amargasaurus": {
+        "name": "Amargasaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "40 + 0.4 bleed",
+                "Fall Resistance": "2000",
+                "Group Slot": "4",
+                "Heal Speed": "1.95",
+                "Health": "800",
+                "Weight": "4000"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:47",
+                "Sprint Speed": "707.25",
+                "Sprint Stam Drain": "0.6",
+                "Stam Recovery Rate": "0.666",
+                "Trot Speed": "250",
+                "Walk Speed": "165"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "150",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "300",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Anodontosaurus": {
+        "name": "Anodontosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1.5",
+                "Basic Attack Damage": "45 + 18 Fracture",
+                "Fall Resistance": "2000",
+                "Group Slot": "4",
+                "Heal Speed": "2",
+                "Health": "775",
+                "Weight": "4500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:05",
+                "Sprint Speed": "600",
+                "Sprint Stam Drain": "0.8",
+                "Stam Recovery Rate": "0.8",
+                "Trot Speed": "300",
+                "Walk Speed": "150"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "160",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "240",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.55",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Barsboldia": {
+        "name": "Barsboldia",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1.1",
+                "Basic Attack Damage": "20 + 12 knockback",
+                "Fall Resistance": "2000",
+                "Group Slot": "5",
+                "Heal Speed": "1.75",
+                "Health": "950",
+                "Weight": "5500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "0:50",
+                "Sprint Speed": "850",
+                "Sprint Stam Drain": "2",
+                "Stam Recovery Rate": "0.666",
+                "Trot Speed": "420",
+                "Walk Speed": "220"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "150",
+                "Swim Sprint Duration": "1:31",
+                "Swim Sprint Speed": "300",
+                "Swim Sprint Stam Drain": "1.1",
+                "Swim Stam Drain": "0.55",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Camptosaurus": {
+        "name": "Camptosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "30",
+                "Fall Resistance": "3000",
+                "Group Slot": "1",
+                "Heal Speed": "1.67",
+                "Health": "600",
+                "Weight": "1600"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "4:10",
+                "Sprint Speed": "1125",
+                "Sprint Stam Drain": "0.4",
+                "Stam Recovery Rate": "0.8",
+                "Trot Speed": "730",
+                "Walk Speed": "270"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "125",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "250",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Ceratosaurus": {
+        "name": "Ceratosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "40",
+                "Fall Resistance": "3000",
+                "Group Slot": "2",
+                "Heal Speed": "1.5",
+                "Health": "600",
+                "Weight": "2600"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:23",
+                "Sprint Speed": "1050",
+                "Sprint Stam Drain": "0.7",
+                "Stam Recovery Rate": "0.7",
+                "Trot Speed": "480",
+                "Walk Speed": "230"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "125",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "225",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Concavenator": {
+        "name": "Concavenator",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "50",
+                "Fall Resistance": "3000",
+                "Group Slot": "2",
+                "Heal Speed": "1.25",
+                "Health": "550",
+                "Weight": "2100"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:47",
+                "Sprint Speed": "1100",
+                "Sprint Stam Drain": "0.6",
+                "Stam Recovery Rate": "0.7",
+                "Trot Speed": "490",
+                "Walk Speed": "230"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "150 (250#)",
+                "Swim Sprint Duration": "1:31",
+                "Swim Sprint Speed": "450 (562.5#)",
+                "Swim Sprint Stam Drain": "1.1",
+                "Swim Stam Drain": "0.6 (0#)",
+                "Swim Stam Recovery Rate": "- (0.7#)"
+            }
+        }
+    },
+    "Daspletosaurus": {
+        "name": "Daspletosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "60",
+                "Fall Resistance": "2000",
+                "Group Slot": "3",
+                "Heal Speed": "1.25",
+                "Health": "600",
+                "Weight": "3500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "1:31",
+                "Sprint Speed": "1025",
+                "Sprint Stam Drain": "1.1",
+                "Stam Recovery Rate": "0.7",
+                "Trot Speed": "500",
+                "Walk Speed": "225"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "100",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "250",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Deinocheirus": {
+        "name": "Deinocheirus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1.1",
+                "Basic Attack Damage": "35 + 0.4 bleed",
+                "Fall Resistance": "2000",
+                "Group Slot": "5",
+                "Heal Speed": "1.4",
+                "Health": "900",
+                "Weight": "4500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "0:45",
+                "Sprint Speed": "800",
+                "Sprint Stam Drain": "2.22",
+                "Stam Recovery Rate": "0.666",
+                "Trot Speed": "400",
+                "Walk Speed": "170"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "500",
+                "Swim Sprint Duration": "4:10",
+                "Swim Sprint Speed": "700",
+                "Swim Sprint Stam Drain": "0.4",
+                "Swim Stam Drain": "0",
+                "Swim Stam Recovery Rate": "0.666 (1.332‡)"
+            }
+        }
+    },
+    "Deinonychus": {
+        "name": "Deinonychus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "50",
+                "Fall Resistance": "4000",
+                "Group Slot": "1",
+                "Heal Speed": "2.5",
+                "Health": "500",
+                "Weight": "800"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "3:20",
+                "Sprint Speed": "1100",
+                "Sprint Stam Drain": "0.5",
+                "Stam Recovery Rate": "0.9",
+                "Trot Speed": "360",
+                "Walk Speed": "160"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "100",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "270",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Eotriceratops": {
+        "name": "Eotriceratops",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1.1",
+                "Basic Attack Damage": "55",
+                "Fall Resistance": "2000",
+                "Group Slot": "5",
+                "Heal Speed": "1.9",
+                "Health": "800",
+                "Weight": "5500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "0:45",
+                "Sprint Speed": "810",
+                "Sprint Stam Drain": "2.2",
+                "Stam Recovery Rate": "0.666",
+                "Trot Speed": "420",
+                "Walk Speed": "275"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "200",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "400",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Eurhinosaurus": {
+        "name": "Eurhinosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "40 + 0.2 bleed",
+                "Fall Resistance": "2000",
+                "Group Slot": "2",
+                "Heal Speed": "2",
+                "Health": "600",
+                "Weight": "3000"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "1:03",
+                "Sprint Speed": "100",
+                "Sprint Stam Drain": "1.6",
+                "Stam Recovery Rate": "0.9",
+                "Trot Speed": "58",
+                "Walk Speed": "30"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "700",
+                "Swim Sprint Duration": "2:47",
+                "Swim Sprint Speed": "1050",
+                "Swim Sprint Stam Drain": "0.6",
+                "Swim Stam Drain": "0",
+                "Swim Stam Recovery Rate": "0.9"
+            }
+        }
+    },
+    "Hatzegopteryx": {
+        "name": "Hatzegopteryx",
+        "url": "",
+        "stats": {
+            "Air Mobility Stats": {
+                "Flight Sprint Speed": "1100",
+                "Fly Speed": "600",
+                "Fly Sprint Duration": "0:50",
+                "Fly Sprint Stam Drain": "2",
+                "Fly Stam Drain": "0.83"
+            },
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "60",
+                "Fall Resistance": "4000",
+                "Group Slot": "3",
+                "Heal Speed": "1.4",
+                "Health": "600",
+                "Weight": "3100"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "1:03",
+                "Sprint Speed": "1000",
+                "Sprint Stam Drain": "1.6",
+                "Stam Recovery Rate": "0.6",
+                "Trot Speed": "640",
+                "Walk Speed": "250"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "150",
+                "Swim Sprint Duration": "2:23",
+                "Swim Sprint Speed": "250",
+                "Swim Sprint Stam Drain": "0.7",
+                "Swim Stam Drain": "0.4",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Iguanodon": {
+        "name": "Iguanodon",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "40",
+                "Fall Resistance": "2000",
+                "Group Slot": "4",
+                "Heal Speed": "1.6",
+                "Health": "850",
+                "Weight": "4000"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "1:03",
+                "Sprint Speed": "1000",
+                "Sprint Stam Drain": "1.6",
+                "Stam Recovery Rate": "0.7",
+                "Trot Speed": "340",
+                "Walk Speed": "200"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "300",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "450",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Kaiwhekea": {
+        "name": "Kaiwhekea",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "45",
+                "Fall Resistance": "2000",
+                "Group Slot": "3",
+                "Heal Speed": "2.2",
+                "Health": "750",
+                "Weight": "3500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "1:03",
+                "Sprint Speed": "100",
+                "Sprint Stam Drain": "1.6",
+                "Stam Recovery Rate": "0.9",
+                "Trot Speed": "58",
+                "Walk Speed": "30"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "600",
+                "Swim Sprint Duration": "2:47",
+                "Swim Sprint Speed": "990",
+                "Swim Sprint Stam Drain": "0.6",
+                "Swim Stam Drain": "0",
+                "Swim Stam Recovery Rate": "0.9"
+            }
+        }
+    },
+    "Kentrosaurus": {
+        "name": "Kentrosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "40 + 0.4 bleed",
+                "Fall Resistance": "2600",
+                "Group Slot": "2",
+                "Heal Speed": "1.25",
+                "Health": "600",
+                "Weight": "2700"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:23",
+                "Sprint Speed": "1050",
+                "Sprint Stam Drain": "0.7",
+                "Stam Recovery Rate": "0.84",
+                "Trot Speed": "370",
+                "Walk Speed": "180"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "160",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "240",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Lambeosaurus": {
+        "name": "Lambeosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "30",
+                "Fall Resistance": "2000",
+                "Group Slot": "3",
+                "Heal Speed": "2",
+                "Health": "525",
+                "Weight": "3500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:05",
+                "Sprint Speed": "1000",
+                "Sprint Stam Drain": "0.8",
+                "Stam Recovery Rate": "0.8",
+                "Trot Speed": "400",
+                "Walk Speed": "200"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "200",
+                "Swim Sprint Duration": "0:45",
+                "Swim Sprint Speed": "400",
+                "Swim Sprint Stam Drain": "2.2",
+                "Swim Stam Drain": "1.1",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Latenivenatrix": {
+        "name": "Latenivenatrix",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "40",
+                "Fall Resistance": "4000",
+                "Group Slot": "1",
+                "Heal Speed": "2.78",
+                "Health": "400",
+                "Weight": "1400"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "4:10",
+                "Sprint Speed": "1075",
+                "Sprint Stam Drain": "0.4",
+                "Stam Recovery Rate": "0.9",
+                "Trot Speed": "600",
+                "Walk Speed": "300"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "100",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "300",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Megalania": {
+        "name": "Megalania",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "35",
+                "Fall Resistance": "3000",
+                "Group Slot": "2",
+                "Heal Speed": "1.67",
+                "Health": "575",
+                "Weight": "2600"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:23",
+                "Sprint Speed": "1075",
+                "Sprint Stam Drain": "0.7",
+                "Stam Recovery Rate": "0.7",
+                "Trot Speed": "330",
+                "Walk Speed": "180"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "200 (unknown*)",
+                "Swim Sprint Duration": "0:45",
+                "Swim Sprint Speed": "450 (unknown#)",
+                "Swim Sprint Stam Drain": "2.2",
+                "Swim Stam Drain": "1.3 (0*)",
+                "Swim Stam Recovery Rate": "- (unknown*)"
+            }
+        }
+    },
+    "Metriacanthosaurus": {
+        "name": "Metriacanthosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "20",
+                "Fall Resistance": "3000",
+                "Group Slot": "3",
+                "Heal Speed": "1.83",
+                "Health": "500",
+                "Weight": "3100"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:05",
+                "Sprint Speed": "1050",
+                "Sprint Stam Drain": "0.8",
+                "Stam Recovery Rate": "0.7",
+                "Trot Speed": "500",
+                "Walk Speed": "270"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "135",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "210",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Miragaia": {
+        "name": "Miragaia",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "55",
+                "Fall Resistance": "2000",
+                "Group Slot": "3",
+                "Heal Speed": "1.5",
+                "Health": "650",
+                "Weight": "3500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "1:40",
+                "Sprint Speed": "990",
+                "Sprint Stam Drain": "1",
+                "Stam Recovery Rate": "0.8",
+                "Trot Speed": "355",
+                "Walk Speed": "150"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "160",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "240",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Pachycephalosaurus": {
+        "name": "Pachycephalosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "60",
+                "Fall Resistance": "3500",
+                "Group Slot": "2",
+                "Heal Speed": "1.67",
+                "Health": "500",
+                "Weight": "2000"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:47",
+                "Sprint Speed": "1050",
+                "Sprint Stam Drain": "0.6",
+                "Stam Recovery Rate": "0.7",
+                "Trot Speed": "450",
+                "Walk Speed": "200"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "125",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "250",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Pycnonemosaurus": {
+        "name": "Pycnonemosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "50",
+                "Fall Resistance": "2000",
+                "Group Slot": "3",
+                "Heal Speed": "1.4",
+                "Health": "550",
+                "Weight": "3500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:23",
+                "Sprint Speed": "1075",
+                "Sprint Stam Drain": "0.7",
+                "Stam Recovery Rate": "0.7",
+                "Trot Speed": "670",
+                "Walk Speed": "295"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "200",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "350",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Rhamphorhynchus": {
+        "name": "Rhamphorhynchus",
+        "url": "",
+        "stats": {
+            "Air Mobility Stats": {
+                "Flight Sprint Speed": "1300",
+                "Fly Speed": "900",
+                "Fly Sprint Duration": "3:20",
+                "Fly Sprint Stam Drain": "0.5",
+                "Fly Stam Drain": "0.25"
+            },
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "0",
+                "Fall Resistance": "4000",
+                "Group Slot": "1",
+                "Heal Speed": "2.5",
+                "Health": "400",
+                "Weight": "500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:13",
+                "Sprint Speed": "600",
+                "Sprint Stam Drain": "0.75",
+                "Stam Recovery Rate": "0.9",
+                "Trot Speed": "250",
+                "Walk Speed": "80"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "350",
+                "Swim Sprint Duration": "2:13",
+                "Swim Sprint Speed": "700",
+                "Swim Sprint Stam Drain": "0.75",
+                "Swim Stam Drain": "0.55 (0‡)",
+                "Swim Stam Recovery Rate": "- (1.8‡)"
+            }
+        }
+    },
+    "Sarcosuchus": {
+        "name": "Sarcosuchus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "50",
+                "Fall Resistance": "2500",
+                "Group Slot": "4",
+                "Heal Speed": "1.25",
+                "Health": "575",
+                "Weight": "4500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "0:40",
+                "Sprint Speed": "900",
+                "Sprint Stam Drain": "2.5",
+                "Stam Recovery Rate": "0.666",
+                "Trot Speed": "375",
+                "Walk Speed": "150"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "450",
+                "Swim Sprint Duration": "2:47",
+                "Swim Sprint Speed": "880",
+                "Swim Sprint Stam Drain": "0.6",
+                "Swim Stam Drain": "0",
+                "Swim Stam Recovery Rate": "0.999"
+            }
+        }
+    },
+    "Spinosaurus": {
+        "name": "Spinosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1.1",
+                "Basic Attack Damage": "50",
+                "Fall Resistance": "2000",
+                "Group Slot": "5",
+                "Heal Speed": "1.25",
+                "Health": "950",
+                "Weight": "5500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "0:45",
+                "Sprint Speed": "700",
+                "Sprint Stam Drain": "2.2",
+                "Stam Recovery Rate": "0.666",
+                "Trot Speed": "375",
+                "Walk Speed": "270"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "500",
+                "Swim Sprint Duration": "2:47",
+                "Swim Sprint Speed": "750",
+                "Swim Sprint Stam Drain": "0.6",
+                "Swim Stam Drain": "0",
+                "Swim Stam Recovery Rate": "0.666"
+            }
+        }
+    },
+    "Stegosaurus": {
+        "name": "Stegosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "80",
+                "Fall Resistance": "2000",
+                "Group Slot": "4",
+                "Heal Speed": "1",
+                "Health": "650",
+                "Weight": "5000"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "1:03",
+                "Sprint Speed": "900",
+                "Sprint Stam Drain": "1.6",
+                "Stam Recovery Rate": "0.7",
+                "Trot Speed": "300",
+                "Walk Speed": "130"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "150",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "300",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Struthiomimus": {
+        "name": "Struthiomimus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "40",
+                "Fall Resistance": "3500",
+                "Group Slot": "1",
+                "Heal Speed": "1.5",
+                "Health": "450",
+                "Weight": "1400"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "5:23",
+                "Sprint Speed": "1150",
+                "Sprint Stam Drain": "0.31",
+                "Stam Recovery Rate": "0.8",
+                "Trot Speed": "680",
+                "Walk Speed": "200"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "125",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "200",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Styracosaurus": {
+        "name": "Styracosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "50 + 0.4 bleed",
+                "Fall Resistance": "2200",
+                "Group Slot": "2",
+                "Heal Speed": "1.25",
+                "Health": "600",
+                "Weight": "2200"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:05",
+                "Sprint Speed": "1050",
+                "Sprint Stam Drain": "0.8",
+                "Stam Recovery Rate": "0.7",
+                "Trot Speed": "420",
+                "Walk Speed": "210"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "180",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "250",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Suchomimus": {
+        "name": "Suchomimus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "40",
+                "Fall Resistance": "2100",
+                "Group Slot": "4",
+                "Heal Speed": "1.1",
+                "Health": "700",
+                "Weight": "4500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "1:03",
+                "Sprint Speed": "950",
+                "Sprint Stam Drain": "1.6",
+                "Stam Recovery Rate": "0.6",
+                "Trot Speed": "430",
+                "Walk Speed": "287"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "420",
+                "Swim Sprint Duration": "4:10",
+                "Swim Sprint Speed": "640",
+                "Swim Sprint Stam Drain": "0.4",
+                "Swim Stam Drain": "0",
+                "Swim Stam Recovery Rate": "0.6"
+            }
+        }
+    },
+    "Thalassodromeus": {
+        "name": "Thalassodromeus",
+        "url": "",
+        "stats": {
+            "Air Mobility Stats": {
+                "Flight Sprint Speed": "1200",
+                "Fly Speed": "600",
+                "Fly Sprint Duration": "2:13",
+                "Fly Sprint Stam Drain": "0.75",
+                "Fly Stam Drain": "0.5"
+            },
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "40",
+                "Fall Resistance": "4000",
+                "Group Slot": "2",
+                "Heal Speed": "1.67",
+                "Health": "550",
+                "Weight": "2100"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "2:23",
+                "Sprint Speed": "1000",
+                "Sprint Stam Drain": "0.7",
+                "Stam Recovery Rate": "0.9",
+                "Trot Speed": "350",
+                "Walk Speed": "200"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "350",
+                "Swim Sprint Duration": "1:31",
+                "Swim Sprint Speed": "650",
+                "Swim Sprint Stam Drain": "1.1",
+                "Swim Stam Drain": "0.8 (0‡)",
+                "Swim Stam Recovery Rate": "- (1.8‡)"
+            }
+        }
+    },
+    "Tylosaurus": {
+        "name": "Tylosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1",
+                "Basic Attack Damage": "65",
+                "Fall Resistance": "2000",
+                "Group Slot": "4",
+                "Heal Speed": "2",
+                "Health": "950",
+                "Weight": "5000"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "1:03",
+                "Sprint Speed": "160",
+                "Sprint Stam Drain": "1.6",
+                "Stam Recovery Rate": "0.9",
+                "Trot Speed": "100",
+                "Walk Speed": "50"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "550",
+                "Swim Sprint Duration": "3:42",
+                "Swim Sprint Speed": "900",
+                "Swim Sprint Stam Drain": "0.45",
+                "Swim Stam Drain": "0",
+                "Swim Stam Recovery Rate": "0.9"
+            }
+        }
+    },
+    "Tyrannosaurus": {
+        "name": "Tyrannosaurus",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1.1",
+                "Basic Attack Damage": "60",
+                "Fall Resistance": "2000",
+                "Group Slot": "5",
+                "Heal Speed": "1.9",
+                "Health": "800",
+                "Weight": "5500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "0:45",
+                "Sprint Speed": "800",
+                "Sprint Stam Drain": "2.2",
+                "Stam Recovery Rate": "0.666",
+                "Trot Speed": "420",
+                "Walk Speed": "270"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "200",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "350",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    },
+    "Tyrannotitan": {
+        "name": "Tyrannotitan",
+        "url": "",
+        "stats": {
+            "General Stats": {
+                "Armor": "1.1",
+                "Basic Attack Damage": "45 + 0.55 bleed",
+                "Fall Resistance": "2000",
+                "Group Slot": "5",
+                "Heal Speed": "1.5",
+                "Health": "800",
+                "Weight": "5500"
+            },
+            "Land Mobility Stats": {
+                "Sprint Duration": "1:03",
+                "Sprint Speed": "925",
+                "Sprint Stam Drain": "1.6",
+                "Stam Recovery Rate": "0.666",
+                "Trot Speed": "475",
+                "Walk Speed": "270"
+            },
+            "Water Mobility Stats": {
+                "Swim Speed": "180",
+                "Swim Sprint Duration": "1:06",
+                "Swim Sprint Speed": "290",
+                "Swim Sprint Stam Drain": "1.5",
+                "Swim Stam Drain": "0.8",
+                "Swim Stam Recovery Rate": "-"
+            }
+        }
+    }
+}
